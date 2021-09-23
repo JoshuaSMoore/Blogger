@@ -18,11 +18,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
-        <li>
-          <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
-            About
-          </router-link>
-        </li>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#blog-form">
+          Create Project
+        </button>
       </ul>
       <span class="navbar-text">
         <button
