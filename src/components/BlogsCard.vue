@@ -10,8 +10,8 @@
           {{ blog.body }}
         </p>
         <div class="d-flex">
-          <router-link :to="{name: 'Profile', params: {id: blogs.creatorId}}" class="selectable&quot;">
-            <a href="#" class="btn btn-primary">Blog Page</a>
+          <router-link :to="{name: 'Profile', params: {id: blogs.creatorId}}" class="btn btn-primary">
+            Blog Page
           </router-link>
         </div>
       </div>
