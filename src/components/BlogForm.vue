@@ -39,9 +39,27 @@
 </template>
 
 <script>
+import { Modal } from 'bootstrap'
+import { blogsService } from '../services/BlogsService.js'
+import Pop from '../utils/Pop.js'
+import { ref } from '@vue/reactivity'
+
 export default {
   setup() {
-    return {}
+    const editable = ref({})
+    return {
+      async createBlog() {
+        try {
+          await blogsService.createBlog(editable.value)
+          editable.value = {}
+          Pop.toast('You made it')
+          const modal = Modal.getInstance(document.getElementById('blog-form'))
+          modal.hide()
+        } catch (error) {
+          Pop.toast(error, 'error')
+        }
+      }
+    }
   }
 }
 </script>

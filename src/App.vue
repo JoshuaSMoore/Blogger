@@ -10,6 +10,15 @@
       Made with 💖 by CodeWorks
     </div>
   </footer>
+
+  <Modal id="blog-form">
+    <template #modal-title>
+      <h4>Blog Form</h4>
+    </template>
+    <template #modal-body>
+      <BlogForm />
+    </template>
+  </Modal>
 </template>
 
 <script>
