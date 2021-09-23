@@ -9,12 +9,12 @@
         <p class="card-text">
           {{ blog.body }}
         </p>
-        <div class="d-flex">
+      </div>
+        <div class="card d-flex">
           <router-link :to="{name: 'Profile', params: {id: blog.creatorId}}" class="btn btn-primary">
             Blog Page
           </router-link>
         </div>
-      </div>
     </div>
   </div>
 </template>
