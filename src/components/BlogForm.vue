@@ -24,9 +24,9 @@
       <label for="title">Description</label>
       <input type="text"
              class="form-control bg-light"
-             name="description"
+             name="body"
              placeholder="description"
-             v-model="editable.description"
+             v-model="editable.body"
              required
       >
     </div>
@@ -46,7 +46,7 @@ import { ref } from '@vue/reactivity'
 
 export default {
   setup() {
-    const editable = ref({})
+    const editable = ref({ blog: [] })
     return {
       async createBlog() {
         try {
