@@ -1,7 +1,7 @@
 <template>
   <div class="home container-fluid">
     <div class="row">
-      <BlogCard v-for="b in blogs" :key="b.id" :blog="b" />
+      <BlogsCard v-for="b in blogs" :key="b.id" :blog="b" />
     </div>
   </div>
 </template>
