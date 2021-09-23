@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row" v-if="blogs.length > 0">
-      <BlogsCard v-for="b in blogs" :key="b.id" :blogs="b" />
+      <BlogsCard v-for="b in blogs" :key="b.id" :blog="b" />
     </div>
     <div class="row" v-else>
       <h3>No Blogs...</h3>
