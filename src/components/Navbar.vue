@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#blog-form">
-          Create Project
+          Create Blog
         </button>
       </ul>
       <span class="navbar-text">

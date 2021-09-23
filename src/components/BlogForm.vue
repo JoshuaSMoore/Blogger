@@ -46,8 +46,9 @@ import { ref } from '@vue/reactivity'
 
 export default {
   setup() {
-    const editable = ref({ blog: [] })
+    const editable = ref('')
     return {
+      editable,
       async createBlog() {
         try {
           await blogsService.createBlog(editable.value)

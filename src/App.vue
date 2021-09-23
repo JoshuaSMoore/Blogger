@@ -11,7 +11,7 @@
     </div>
   </footer>
 
-  <Modal id="blog-form">
+  <Modal>
     <template #modal-title>
       <h4>Blog Form</h4>
     </template>
